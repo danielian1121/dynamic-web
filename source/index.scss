@@ -1,8 +1,10 @@
-body, html {
+body,
+html {
   margin: 0;
   font-size: 32px;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -15,10 +17,10 @@ body {
     > .header__title {
       padding: {
         left: 2.69rem;
-        top: .96rem;
+        top: 0.96rem;
       }
       margin: 0;
-      font-size: .75rem;
+      font-size: 0.75rem;
       color: #1477b1;
       width: 54.3%;
     }
@@ -29,7 +31,7 @@ body {
         padding-top: 1.06rem;
         width: 20%;
         color: rgba(0, 0, 0, 0.87);
-        font-size: .56rem;
+        font-size: 0.56rem;
         text: {
           align: center;
           decoration: none;
@@ -39,6 +41,52 @@ body {
         }
         &.nav__link--blue {
           color: #2f96a5;
+        }
+      }
+    }
+  }
+  > .main {
+    position: relative;
+    > .image {
+      position: absolute;
+      width: 30%;
+      &.image--left {
+        top: 544px;
+        left: -230px;
+        width: 552px;
+        animation-name: left;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        @keyframes left {
+          50% {transform: translateY(20px);}
+          100% {transform: translateY(0px);}
+        }
+      }
+      &.image--middle {
+        top: 20px;
+        left: 42.1%;
+        width: 476px;
+        animation-name: middle;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        @keyframes middle {
+          50% {transform: translateY(-40px);}
+          100% {transform: translateY(0px);}
+        }
+      }
+      &.image--right {
+        top: 528px;
+        left: 70%;
+        width: 886px;
+        animation-name: right;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        @keyframes right {
+          50% {transform: translateY(-50px);}
+          100% {transform: translateY(0px);}
         }
       }
     }
