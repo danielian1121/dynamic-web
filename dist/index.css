@@ -131,11 +131,13 @@ body > .main > .aside > .aside__button.button > .button__main {
   color: rgba(255, 255, 255, 0.87);
   background-color: #1477b1;
   border: none;
+  transition-duration: 0.8s;
   cursor: pointer;
 }
 body > .main > .aside > .aside__button.button > .button__main:hover {
   transform: translate(-1px, -1px);
   box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.8s;
 }
 body > .main > .aside > .aside__button.button > .button__second {
   margin-left: 30px;
@@ -143,11 +145,13 @@ body > .main > .aside > .aside__button.button > .button__second {
   border: none;
   color: #1477b1;
   font-size: 18px;
+  transition-duration: 0.8s;
   cursor: pointer;
 }
 body > .main > .aside > .aside__button.button > .button__second:hover {
   transform: translate(-1px, -1px);
   text-shadow: #000000 3px 3px 15px;
+  transition-duration: 0.8s;
 }
 body > .main > .image {
   position: absolute;
